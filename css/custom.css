@@ -1,0 +1,127 @@
+﻿.dashboard-container{
+    background-color: #fff;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+}
+.dashboard-container h3{
+    font-size: 14px;
+    color: #536c79;
+    padding: 5px 0px 5px 10px;
+    margin: 0px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.dashboard-container .process-bar-container{
+    width: 100%;
+    float: none;
+    box-sizing: border-box;
+    padding:0px;
+    border: 2px solid #dcdcdc;
+    border-radius: 5px;
+}
+.dashboard-container .process-number{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #c3c3c3;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+.dashboard-container .process-number.active{
+    background-color: #4ec160; 
+}
+.dashboard-container .process-bar-container .process-order{
+    background-color: #eaeceb;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+}
+.dashboard-container .process-bar-container .process-shipping{
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+}
+.dashboard-container .process-bar-container .process-billing{
+    padding: 10px 15px;
+    background-color: #eaeceb;
+}
+.dashboard-container .process-bar-container .process-shipping h3{
+    font-size: 16px;
+}
+.dashboard-container .process-bar-container .process-shipping .ship-infn{
+    min-height: 195px;
+    margin-top: 10px;
+}
+.dashboard-container .process-view-container{
+    width: 100%;
+    float: none;
+    box-sizing: border-box;
+    padding: 0px;
+    margin-top: 20px;
+}
+.dashboard-container .process-view-container h2{
+    font-size: 20px;
+    color: #536c79;
+}
+.dashboard-container .process-view-container h3{
+    font-size: 16px;
+    color: #536c79;
+    margin: 0px;
+    padding: 5px 0px 5px 10px;
+    cursor: pointer;
+}
+.dashboard-container .process-view-container .collapse{
+    background: url(../img/collapse.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    display:  inline-block;
+    vertical-align: middle;
+    margin-top: 4px;
+}
+.dashboard-container .process-view-container .active .collapse{
+    background: url(../img/collapse-active.png) no-repeat;
+}
+.dashboard-container .process-view-container .next .collapse{
+    background: url(../img/collapse-next.png) no-repeat;
+}
+.dashboard-container .process-view-container .readonly-informations{
+    margin-left: 7px;
+    padding: 5px 0px 20px 20px;
+    border-left: 3px solid #d9d9d9;
+    color: #8d8d8c;
+}
+.dashboard-container .process-view-container .active .readonly-informations{
+    border-color: #7bab7f
+}
+.dashboard-container .process-view-container .readonly-informations span{
+    display: block;
+    padding-bottom: 3px;
+    color: #919193;
+    font-size: 14px;
+}
+
+@media (min-width: 768px){
+    .dashboard-container .process-view-container{
+        width: 30%;
+        float: left;
+        padding: 0px 20px;
+        margin-top: 0px;
+    }
+    .dashboard-container .process-view-container h2{
+        font-size: 24px;
+    }
+    .dashboard-container h3{
+        font-size: 16px;
+    }
+    .dashboard-container .process-bar-container .process-shipping h3{
+        font-size: 24px;
+    }
+    .dashboard-container .process-bar-container{
+        width: 70%;
+        float:left;
+    }
+}
